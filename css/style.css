@@ -1,0 +1,726 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  color: #000;
+  font-family: "Comfortaa", cursive;
+  /* font-family: 'Yeseva One', cursive; */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+.title {
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-weight: 400;
+}
+.section {
+  padding-bottom: 150px;
+	}
+.button {
+  padding: 18px 54px;
+  background: #ffbd59;
+  font-family: "Comfortaa", cursive;
+  font-size: 16px;
+  font-weight: 600;
+}
+.container {
+  max-width: 1180px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+.section--decor {
+  position: relative;
+}
+.section--decor::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url(../images/section-decor.png);
+  width: 22px;
+  height: 30px;
+}
+
+.section--decor::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  bottom: 13px;
+  background-color: #7b6152;
+  width: 1000%;
+  height: 1px;
+}
+
+/* TODO=========стилізація=Бургер=====2-02-35========================== */
+.menu__btn {
+  display: none;
+  width: 30px;
+  height: 25px;
+  background-color: transparent;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu__btn span {
+  height: 1.45px;
+  background-color: #786152;
+  width: 100%;
+}
+.products__item-text {
+  height: 25px;
+}
+
+/* TODO=========2-42-23 =========================================== */
+.header {
+  /* background-color: #BEA495; */
+  background: #fff8f3;
+}
+
+.header__inner {
+  padding-top: 4px;
+  /* margin-top: 4px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  gap: 20px;
+}
+
+.menu__list-link {
+  text-transform: uppercase;
+}
+
+.phone {
+  position: relative;
+}
+
+.phone::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/phone.svg);
+  width: 20px;
+  height: 20px;
+  left: -23px;
+  top: -2px;
+}
+
+/* *-------------------2-41-15-------------------------------- */
+.main {
+  /* background-color: #BEA495; */
+  background-color: #fff8f3;
+  overflow-x: clip;
+}
+
+.top {
+  padding: 40px 0 150px;
+}
+
+.top__inner {
+  position: relative;
+}
+
+.top__content {
+  width: 370px;
+  padding: 150px 0 250px;
+}
+
+.top__title {
+  font-family: "Yeseva One", cursive;
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.top__text {
+  margin-bottom: 48px;
+}
+
+.top__buy {
+  padding: 18px 54px;
+  background: #ffbd59;
+  font-family: "Comfortaa", cursive;
+  /* font-family: 'Yeseva One', cursive; */
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.top__img {
+  position: absolute;
+  top: 0;
+  left: 240px;
+}
+
+/* ?========3-56-25================================= */
+.about {
+  background-color: #a5978e;
+  padding: 50px 0;
+  color: #fafafa;
+  margin-bottom: 150px;
+}
+
+.about__inner {
+  display: flex;
+  align-items: center;
+}
+
+.about__content {
+  min-width: 370px;
+}
+/* ?=========Видалив about_title=========================5_09_31
+.about__title {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+ */
+.about__text {
+  margin-bottom: 15px;
+}
+
+.about__list {
+  display: flex;
+  padding-left: 110px;
+  padding-bottom: 48px;
+  align-items: center;
+  gap: 0 22px;
+  flex-basis: 930px;
+}
+
+.about__item-img {
+  margin-bottom: 10px;
+}
+
+.about__item-text {
+  font-size: 11px;
+}
+.section__inner {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 370px auto;
+}
+/* .section__descr{ 
+	flex-basis: 370px;}*/
+
+.section__content-descr {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-bottom: 92px;
+}
+.products__content {
+  gap: 50px 90px;
+}
+.products__item {
+  width: 290px;
+  margin: 0 auto;
+  text-align: center;
+}
+.products__item-img {
+	/* width: 348px; */
+  margin-bottom: 8px;
+}
+.products__item-price {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+}
+.products__item-title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+}
+.products__item-text {
+  margin-bottom: 27px;
+  font-size: 12px;
+}
+/* .button{ 
+	padding: 18px 54px;
+	background: #ffbd59;
+	font-family: "Comfortaa", cursive;
+	font-size: 16px;
+	font-weight: 600;
+}*/
+/* *-------------------STEPS--------6-29-15----------------------- */
+.steps__list {
+  gap: 70px 25px;
+  counter-reset: number;
+}
+.steps__item {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+  position: relative;
+}
+.steps__item::before {
+  counter-increment: number;
+  content: "0" counter(number);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 30px;
+  color: #bea495;
+  font-family: "Yeseva One", cursive;
+}
+.steps__item:nth-child(n + 10):before {
+  content: counter(number);
+}
+.steps__item.steps__item--even::before {
+  left: auto;
+  right: 0;
+}
+.steps__item-text {
+  flex-basis: 174px;
+  padding-bottom: 40px;
+}
+
+/* *-------------------STEPS------------------------------- */
+/*? ----------------------------------------------- */
+.footer {
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+}
+
+.email {
+  margin: 17px 0px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 15px;
+}
+
+/* *++++++++++час 1-32 ++++++++++Адаптація++++++1000++++++++++++++++++ */
+@media (max-width: 1050px) {
+	
+  .steps__list {
+    gap: 37px 5px;
+  }
+  .steps__item {
+    gap: 0 30px;
+  }
+	.products__content {
+    gap: 50px 46px;
+}
+}
+@media (max-width: 1000px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .top__content {
+    width: 333px;
+    padding: 95px 0 70px;
+  }
+
+  .top__img-l {
+    width: 655px;
+  }
+
+  .top__img {
+    left: 300px;
+  }
+
+  .top__text {
+    margin-bottom: 30px;
+  }
+  .about__content {
+    min-width: 300px;
+  }
+  .about__list {
+    padding-left: 20px;
+  }
+  .section__inner {
+    grid-template-columns: 290px auto;
+    gap: 0 10px;
+  }
+  .products__content {
+		/* gap: 67px; */
+    gap: 67px 87px;
+  }
+  .section__text {
+    font-size: 10px;
+  }
+  .steps__list {
+    gap: 37px 35px;
+  }
+  .steps__item {
+    gap: 0 30px;
+  }
+}
+
+/* TODO------------------900------------------------------------------- */
+@media (max-width: 900px) {
+  .footer__inner {
+    flex-wrap: wrap;
+  }
+
+  .footer__contacts {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .footer__social {
+    justify-content: center;
+  }
+  .section__inner {
+    grid-template-columns: 200px auto;
+    gap: 0 10px;
+  }
+  .products__content {
+    gap: 30px 16px;
+  }
+}
+
+/* TODO------------------768--SIZE----------768------------------ */
+@media (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+
+  .container {
+    max-width: 640px;
+    /* padding-left: 24px; */
+    /* padding-right: 24px; */
+  }
+
+  .phone::before {
+    width: 14px;
+    height: 14px;
+    left: -16px;
+    top: -2px;
+    background-size: cover;
+  }
+
+  .top__content {
+    width: 230px;
+  }
+
+  .top__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .top__text {
+    /* ?----------зміна баді -4-20-28--------- */
+    /* font-size: 10px; */
+    margin-bottom: 20px;
+  }
+
+  .top__img {
+    left: 180px;
+  }
+  .about__content {
+    min-width: 200px;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .about__title {
+    margin-bottom: 20px;
+  }
+  .about__list {
+    margin-left: 27px;
+    margin-bottom: 33px;
+    gap: 0 10px;
+  }
+  .about__item-text {
+    font-size: 6px;
+  }
+  .about__item-img {
+    margin-bottom: 6px;
+  }
+  .about__item-img--1 {
+    width: 120px;
+  }
+  .about__item-img--2 {
+    width: 190px;
+  }
+  .about__item-img--3 {
+    width: 120px;
+  }
+  .products__item {
+    width: 200px;
+  }
+  .products__item-img {
+    width: 200px;
+    margin-bottom: 6px;
+  }
+  .button {
+    font-size: 12px;
+  }
+  .products__item-text {
+    font-size: 8px;
+    margin-bottom: 18px;
+  }
+  .products__item-price {
+    font-size: 12px;
+    margin-bottom: 7px;
+  }
+  .products__item-title {
+    font-size: 12px;
+    margin-bottom: 9px;
+  }
+  .button {
+    padding: 10px 26px;
+  }
+}
+
+/* *-------------------------------size----640---------------------------- */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .header__menu-list {
+    /* display: none; */
+    width: 141px;
+    background-color: #786152;
+    color: #fff8f3;
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 25px 35px 25px 35px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-110%);
+    transition: transform 0.5s ease;
+    z-index: 5;
+  }
+
+  .header__menu-list.menu--open {
+    transform: translateY(0%);
+  }
+
+  .menu__btn {
+    display: flex;
+  }
+
+  .header__menu {
+    order: 1;
+  }
+  .section__inner {
+    display: block;
+  }
+  .section__descr {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+/* *---------------------------size--media--500---------------------- */
+@media (max-width: 500px) {
+  .footer__inner {
+    flex-direction: column;
+  }
+
+  .footer__menu {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .footer__menu-list {
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 50px 0;
+    font-size: 14px;
+  }
+}
+
+/* *---------------------------size----480---------------------------- */
+@media (max-width: 480px) {
+  .top__img-l {
+    width: 309px;
+    left: 167px;
+  }
+
+  .top__content {
+    width: 180px;
+  }
+
+  .top__title {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .top__text {
+    font-size: 8px;
+    margin-bottom: 15px;
+  }
+
+  .top__buy {
+    font-size: 10px;
+    padding: 14px 41px;
+  }
+
+  .top {
+    padding: 30px 0 50px;
+  }
+  .about__content {
+    min-width: 170px;
+  }
+  .about__list {
+    margin-left: 0;
+    padding-left: 10px;
+  }
+  .about__item-text {
+    display: none;
+  }
+  .about__item-img--1,
+  .about__item-img--3 {
+    width: 80px;
+  }
+  .about__item-img--2 {
+    width: 140px;
+  }
+  .about__list {
+    gap: 0 5px;
+    align-items: flex-end;
+    margin-bottom: 0;
+  }
+  .about__inner {
+    align-items: flex-end;
+  }
+  .about {
+    margin-bottom: 50px;
+  }
+  .section {
+    padding-bottom: 50px;
+  }
+  .section__content-descr {
+    padding-bottom: 62px;
+  }
+  .section__descr {
+    margin: 0 auto 30px;
+    width: 300px;
+  }
+}
+
+/* *---------------------------size----360---------------------------- */
+@media (max-width: 360px) {
+  .top__img-l {
+    width: 185px;
+  }
+  .top__img {
+    left: auto;
+    right: 0;
+  }
+  .top__content {
+    width: 200px;
+    padding: 20px 0 0;
+  }
+  .top__title {
+    font-size: 18px;
+    /* !---------- моя заливка-----3-42-24------- */
+    position: relative;
+    z-index: 1;
+  }
+  .top__text {
+    font-size: 10px;
+    /* !---------- моя заливка-----3-42-24------- */
+    position: relative;
+    z-index: 1;
+  }
+  body {
+    font-size: 8px;
+  }
+  .about__content {
+    min-width: 233px;
+    margin-bottom: 30px;
+  }
+  .title {
+    margin-bottom: 10px;
+  }
+  .about__list {
+    padding-left: 12px;
+    margin-left: 12px;
+    gap: 0 15px;
+    padding-bottom: 30px;
+  }
+  .about {
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+  .about__inner {
+    /* padding-bottom: 39px; */
+  }
+  .about__item-img--2 {
+    display: none;
+  }
+  .about__text {
+    margin-bottom: 11px;
+  }
+  .section__descr {
+    margin: 0 auto 25px;
+    width: 235px;
+  }
+  .products__item {
+    width: 150px;
+  }
+  .products__content {
+    gap: 40px 7px;
+  }
+  .products__item-img {
+    width: 150px;
+  }
+  .button {
+    font-size: 8px;
+    padding: 8px 20px;
+  }
+  .products__item-price {
+    font-size: 10px;
+    margin-bottom: 5cqw;
+  }
+  .products__item-title {
+    font-size: 10px;
+  }
+  .products__item-text {
+    margin-bottom: 16px;
+  }
+}
