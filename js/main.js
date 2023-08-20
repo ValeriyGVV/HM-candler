@@ -49,7 +49,7 @@ accordeonTitles.forEach.call(accordeonTitles, function (accordeonTitle) {
 		if (currentText.classList.contains('accordeon__text--visible')) {
 			currentText.style.maxHeight = currentText.scrollHeight + "px";
 		} else {
-			currentText.style.maxHeight = null;
+			currentText.style.maxHeight = 0;
 		}
 	});
 });
